@@ -156,16 +156,16 @@ testRunner.And("All the Labels from the form should be present on the Overlay", 
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Email", "test123@gmail.com")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Gender", "Male")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:MobileNumber", "98765457765")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:DOB", "")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:DOB", "12 Jan 2022")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Subject", "TestSubject1")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Hobbies", "Reading")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Hobbies", "Sports")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:CurrentAddress", "TestCurrent address")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:State", "NCR")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:City", "Delhi")]
         public virtual void TestSubmittedFormDataOnOverlay_TestFname()
         {
 #line 5
-this.TestSubmittedFormDataOnOverlay("TestFname", "TestLname", "test123@gmail.com", "Male", "98765457765", "", "TestSubject1", "Reading", "TestCurrent address", "NCR", "Delhi", ((string[])(null)));
+this.TestSubmittedFormDataOnOverlay("TestFname", "TestLname", "test123@gmail.com", "Male", "98765457765", "12 Jan 2022", "TestSubject1", "Sports", "TestCurrent address", "NCR", "Delhi", ((string[])(null)));
 #line hidden
         }
     }

@@ -24,13 +24,13 @@ namespace ToolsQASampleTest_Encora.StepDefinations
             ObjectRepository.AutomationPracticeForm.EnterFirstName(fName);
             ObjectRepository.AutomationPracticeForm.EnterLastName(Lname);
             ObjectRepository.AutomationPracticeForm.EnterEmailAddress(email);
-            //select gender
-            //enter dob
+            ObjectRepository.AutomationPracticeForm.SelectGender(gender);
+            ObjectRepository.AutomationPracticeForm.EnterMobileNumber(mobile);
             ObjectRepository.AutomationPracticeForm.EnterSubject(subject);
-            //select hobbie
+            ObjectRepository.AutomationPracticeForm.SelectHobbies(hobbies);
             ObjectRepository.AutomationPracticeForm.EnterCurrentAddress(address);
-            //select state
-            //select city
+            ObjectRepository.AutomationPracticeForm.SelectState(state);
+            ObjectRepository.AutomationPracticeForm.SelectCity(city);
         }
 
         [Given(@"I click Submit")]
@@ -48,8 +48,7 @@ namespace ToolsQASampleTest_Encora.StepDefinations
         [Then(@"All the Labels from the form should be present on the Overlay")]
         public void ThenAllTheLabelsFromTheFormShouldBePresentOnTheOverlay()
         {
-
+            Assert.IsTrue(ObjectRepository.AutomationPracticeForm.Compare_FormLabel_OverlayLabels());
         }
-
     }
 }

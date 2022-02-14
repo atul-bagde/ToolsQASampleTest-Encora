@@ -64,39 +64,5 @@ namespace ToolsQASampleTest_Encora.ComponentHelper
                     return false;
             });
         }
-
-
-        public static bool WaitForElementVsible(IWebElement element, TimeSpan timeout)
-        {
-            ObjectRepository.Driver.Manage().Timeouts().ImplicitWait = (TimeSpan.FromSeconds(1));
-            var wait = GetWebDriverWait(timeout);
-            var flag = wait.Until(WaitForElementVsibleFunc(element));
-            ObjectRepository.Driver.Manage().Timeouts().ImplicitWait = (TimeSpan.FromSeconds(ObjectRepository.Config.GetElementLoadTimeout()));
-            return flag;
-        }
-
-        private static Func<IWebDriver, bool> WaitForElementVsibleFunc(IWebElement element)
-        {
-            return ((x) =>
-            {
-                if (element.Displayed)
-                    return true;
-                else
-                    return false;
-            });
-        }
-
-        public static bool FindBySafe(IWebElement element)
-        {
-            try
-            {
-                return IsElementPresent(element);
-            }
-
-            catch (NoSuchElementException)
-            {
-                return false;
-            }
-        }
     }
 }

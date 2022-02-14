@@ -30,10 +30,6 @@ namespace ToolsQASampleTest_Encora.BaseClasses
             {
                 chromeOptions.AcceptInsecureCertificates = false;
                 chromeOptions.UnhandledPromptBehavior = UnhandledPromptBehavior.Accept;
-                chromeOptions.AddArgument("--start-maximized");
-                chromeOptions.AddArgument("--ignore-certificate-errors");
-                chromeOptions.AddArgument("--disable-popup-blocking");
-                chromeOptions.AddArgument("--incognito");
             };
 
             return chromeOptions;
@@ -45,7 +41,6 @@ namespace ToolsQASampleTest_Encora.BaseClasses
             {
                 firefoxOptions.AcceptInsecureCertificates = false;
                 firefoxOptions.UnhandledPromptBehavior = UnhandledPromptBehavior.Accept;
-                firefoxOptions.Profile = default;
             };
 
             return firefoxOptions;
