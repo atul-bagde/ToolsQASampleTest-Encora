@@ -79,7 +79,6 @@
   <ItemGroup>
     <Compile Include="BaseClasses\BaseClass.cs" />
     <Compile Include="BaseClasses\PageBase.cs" />
-    <Compile Include="ComponentHelper\ComboBoxHelper.cs" />
     <Compile Include="ComponentHelper\GenericHelper.cs" />
     <Compile Include="ComponentHelper\Navigationhelper.cs" />
     <Compile Include="Configurations\AppConfigReader.cs" />

@@ -30,7 +30,7 @@ namespace ToolsQASampleTest_Encora.Configurations
         {
             string elementTimeout = ConfigurationManager.AppSettings.Get(AppConfigKeys.ElementLoadTimeout);
             if (elementTimeout == null)
-                return 30;
+                return 20;
             else
                 return Convert.ToInt32(elementTimeout);
         }

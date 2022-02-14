@@ -60,7 +60,7 @@ namespace ToolsQASampleTest_Encora.BaseClasses
         #endregion
 
         #region DriverActions
-
+        //Drivers are for all the latest versions of all 3 browsers as of 14-Feb
         private static FirefoxDriver GetFirefoxDriver()
         {
             FirefoxDriver driver = new FirefoxDriver(FolderPaths.GetDriverPath(), GetFirefoxOptions());

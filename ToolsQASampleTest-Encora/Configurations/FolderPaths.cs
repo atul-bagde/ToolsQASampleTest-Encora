@@ -10,7 +10,7 @@ namespace ToolsQASampleTest_Encora.Configurations
 {
     public class FolderPaths
     {
-        private const string DriverPath = "\\Drivers";
+        private const string DriverPath = "\\Drivers\\";
 
         public static string GetDriverPath()
         {
